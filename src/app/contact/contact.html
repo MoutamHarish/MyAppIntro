@@ -1,0 +1,68 @@
+<section class="contact">
+  <h1>Contact Me</h1>
+
+  <!-- FORM -->
+  <form class="contact-form" (ngSubmit)="sendMessage()">
+
+    <div class="field">
+      <input
+        type="text"
+        [(ngModel)]="name"
+        name="name"
+        required
+        placeholder=" "
+      />
+      <label>Name</label>
+    </div>
+
+    <div class="field">
+      <input
+        type="email"
+        [(ngModel)]="email"
+        name="email"
+        required
+        placeholder=" "
+      />
+      <label>Email</label>
+    </div>
+
+    <div class="field">
+      <textarea
+        [(ngModel)]="message"
+        name="message"
+        required
+        placeholder=" "
+      ></textarea>
+      <label>Message</label>
+    </div>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p class="success-message">{{ successMessage }}</p>
+
+  <!-- SOCIAL LINKS -->
+  <div class="social-links">
+    <a href="https://github.com/YOUR_USERNAME" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/moutam-harish-621624293" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://twitter.com/YOUR_USERNAME" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a href="mailto:moutamharish123@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+
+  <!-- CONTACT INFO -->
+  <div class="contact-info">
+    <p>Email: <a href="mailto:moutamharish123@gmail.com">moutamharish123@gmail.com</a></p>
+    <p>Phone: +91 9705290795</p>
+  </div>
+</section>

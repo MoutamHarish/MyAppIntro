@@ -1,0 +1,22 @@
+.hero {
+  min-height: 100vh;
+  padding: 80px;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #00e5ff;
+}
+
+p {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
